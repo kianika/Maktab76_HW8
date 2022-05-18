@@ -1,0 +1,143 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "cera-round-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.right{
+    flex:1;
+    background-image: url("images/bcq1.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.left{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F7FB;
+}
+
+
+.form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 20px;
+}
+
+#username, #password, button{
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 1px 1px  5px 0 rgb(221, 219, 219);
+}
+
+h2{
+    font-weight: normal;
+    margin: 0;
+}
+
+p{
+    font-size: 14px;
+    color: #b7b7bb;
+    margin-top: 0;
+}
+
+button{
+    background-color: #EC7E3C;
+    color: #F5F7FB;
+    transition-duration: 0.4s;
+}
+  
+button:hover {
+    background-color: #62c865; 
+    color: white;
+}
+
+label {
+    color: #58575C;
+}
+
+.rm {
+    font-size: 14px;
+    color: #a3a3a5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.rm label{
+    color: #a3a3a5;
+}
+.rm a{
+   margin-left: auto;
+   text-decoration: underline;
+   color:  #a3a3a5;
+}
+
+
+.main {
+    display: flex;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  /* Creating a custom checkbox
+        based on demand */
+        .geekmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: rgb(220, 212, 212);
+        }
+         
+        .main input:checked ~ .geekmark {
+            background-color: #EC7E3C;
+        }
+          
+        /* Checkmark to be shown in checkbox */
+        /* It is not be shown when not checked */
+        .geekmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        /* Display checkmark when checked */
+        .main input:checked ~ .geekmark:after {
+            display: block;
+        }
+        /* Styling the checkmark using webkit */
+        /* Rotated the rectangle by 45 degree and 
+        showing only two border to make it look
+        like a tickmark */
+        .main .geekmark:after {
+            left: 8px;
+            bottom: 5px;
+            width: 4px;
+            height: 13px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        
