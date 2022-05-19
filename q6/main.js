@@ -1,13 +1,13 @@
 //part1 answer
-/* let site = {
+let site = {
     siteName: "W3Docs",
     bookName: "Javascript",
 
     get fullName() {
-        return(`${this.siteName} ${this.bookName}`);
+        return(`Welcome to ${this.siteName}, ${this.bookName} book`);
     },
 };
-alert(site.fullName);  */
+alert(site.fullName); 
 
 
 
