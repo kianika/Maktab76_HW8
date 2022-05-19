@@ -7,4 +7,10 @@ console.log("Animal walks");
 };
 
 
-dog.__proto__ = animal;
+const dog = {
+    name : "dog",
+    type: "huskey",
+    __proto__: animal
+}
+
+console.log(dog.speaks);
